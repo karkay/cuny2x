@@ -1,12 +1,11 @@
 ## CUNY 2X Day 4 React JS
 
-- Decrementer Button <br>
+- Decrementer Button
 - Mapping List of Contact Cards
 
 ### What I learned
 
 - propTypes to make debugging easier down the line
-<br>
 - camelCase to reduce the amount of confusion between props and naming conventions.
 
 ### Website
