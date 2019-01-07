@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homework 1</title>
+
+</head>
+
+<body>
+<script>
+	//re-implementing forEach
+	function func(x){
+		return x*2;
+	}
+
+	let arr1 = [1,2,5,6,7,12,13,14,15,-1];
+	function myEach(arr,callback){
+		
+		for(let i = 0;i<arr.length;i++){
+			callback(arr[i]);
+		}
+		
+
+	}
+	console.log("myEach");
+	console.log(myEach(arr1,func));
+	console.log(arr1);
+
+
+	//re-implementing map function
+
+	function myMap(arr,callback){
+		let result = [];
+
+		for(let i = 0;i<arr.length;i++){
+			result[i] = callback(arr[i]);
+		}
+
+		return result;
+	}
+
+	console.log("myMap");
+	console.log(myMap(arr1,func));
+	console.log(arr1);
+
+
+	//filter
+
+	function greaterThanTen(x){
+		return x > 10;
+	}
+
+	function myFilter(arr,callback){
+		let results = [];
+
+		for(let i = 0;i<arr.length;i++){
+			if(callback(arr[i])){
+				results.push(arr[i]);
+			}
+		}
+
+		return results;
+	}
+
+	console.log("myFilter");
+	console.log(myFilter(arr1,greaterThanTen));
+	console.log(arr1);
+
+	//every
+
+	function myEvery(arr,callback){
+		for(let i = 0;i<arr.length;i++){
+			if(!callback(arr[i])){
+				return false;
+			}
+		}
+
+		return true;
+	}
+
+	console.log("myEvery");
+	console.log(myEvery(arr1,greaterThanTen));
+
+	arr2 = [11,12,13,14,15];
+	console.log(myEvery(arr2,greaterThanTen));
+	console.log(arr1);
+
+	//reduce
+	function reduceCB(a,b){
+		return a+b;
+	}
+
+	function myReduce(array,callback,begin){
+		var i = 0;
+		var current;
+
+		if(typeof begin === "undefined"){
+			current = array[0];
+			i++;
+		}else{
+			current = begin;
+		}
+		
+		for(;i<array.length;i++){
+			current = callback(current,array[i]);
+		}
+
+		return current;
+	}
+
+	console.log("myReduce");
+	console.log(myReduce(arr2,reduceCB));
+	console.log(myReduce(arr2,reduceCB,1));//optional arg
+	console.log(arr2);
+
+
+
+
+
+
+</script>
+</body>
+</html>

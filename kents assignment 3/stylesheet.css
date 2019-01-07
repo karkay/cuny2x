@@ -1,0 +1,19 @@
+#wrapper{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	padding:50px;
+
+}
+#button1{
+	margin:20px;
+
+}
+#button2{
+	margin:20px;
+}
+#sub_button{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
