@@ -1,13 +1,13 @@
 {
-  "main.css": "/cuny2x/day4/static/css/main.c2eca780.chunk.css",
-  "main.js": "/cuny2x/day4/static/js/main.5c8bd7ba.chunk.js",
-  "main.js.map": "/cuny2x/day4/static/js/main.5c8bd7ba.chunk.js.map",
-  "static/js/1.f739feb7.chunk.js": "/cuny2x/day4/static/js/1.f739feb7.chunk.js",
-  "static/js/1.f739feb7.chunk.js.map": "/cuny2x/day4/static/js/1.f739feb7.chunk.js.map",
-  "runtime~main.js": "/cuny2x/day4/static/js/runtime~main.01145599.js",
-  "runtime~main.js.map": "/cuny2x/day4/static/js/runtime~main.01145599.js.map",
-  "static/css/main.c2eca780.chunk.css.map": "/cuny2x/day4/static/css/main.c2eca780.chunk.css.map",
-  "index.html": "/cuny2x/day4/index.html",
-  "precache-manifest.54fbcd52abfb51b3aef5e1c5937282ff.js": "/cuny2x/day4/precache-manifest.54fbcd52abfb51b3aef5e1c5937282ff.js",
-  "service-worker.js": "/cuny2x/day4/service-worker.js"
+  "main.css": "/cuny2x/static/css/main.c2eca780.chunk.css",
+  "main.js": "/cuny2x/static/js/main.91633c5d.chunk.js",
+  "main.js.map": "/cuny2x/static/js/main.91633c5d.chunk.js.map",
+  "static/js/1.f739feb7.chunk.js": "/cuny2x/static/js/1.f739feb7.chunk.js",
+  "static/js/1.f739feb7.chunk.js.map": "/cuny2x/static/js/1.f739feb7.chunk.js.map",
+  "runtime~main.js": "/cuny2x/static/js/runtime~main.8f3cac06.js",
+  "runtime~main.js.map": "/cuny2x/static/js/runtime~main.8f3cac06.js.map",
+  "static/css/main.c2eca780.chunk.css.map": "/cuny2x/static/css/main.c2eca780.chunk.css.map",
+  "index.html": "/cuny2x/index.html",
+  "precache-manifest.fe9233aefeb4dcbaa46fdd400e1a7bbe.js": "/cuny2x/precache-manifest.fe9233aefeb4dcbaa46fdd400e1a7bbe.js",
+  "service-worker.js": "/cuny2x/service-worker.js"
 }
