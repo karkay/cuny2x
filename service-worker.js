@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/cuny2x/precache-manifest.fe9233aefeb4dcbaa46fdd400e1a7bbe.js"
+  "/cuny2x/day4/precache-manifest.54fbcd52abfb51b3aef5e1c5937282ff.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/cuny2x/index.html", {
+workbox.routing.registerNavigationRoute("/cuny2x/day4/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
