@@ -19,10 +19,11 @@ import React, { Component } from 'react';
             var hours = ((date.getHours() > 10) ? date.getHours() : ("0" + date.getHours()) );
             var minutes = ((date.getMinutes() > 10) ? date.getMinutes() : ("0" + date.getMinutes()) );
             var seconds = ((date.getSeconds() > 10) ? date.getSeconds() : ("0" + date.getSeconds()) );
-
             var formattedTime = hours + ':' + minutes + ':' + seconds;
+
+            const randomColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
             return (
-                <li className={"cryptocurrency " + id}>
+                <li className={"cryptocurrency " + id} style={{backgroundColor: randomColor}}>
                     <p className="cryptocurrency-name">{name} ({symbol})</p>
                     <h1>${ (+price_usd).toFixed(2) }</h1>
                     <p>{percent_change_1h}% 1hr</p>

@@ -48,8 +48,8 @@ class Tickers extends React.Component{
 		  .then(response => {
 		  	console.log(response.data);
 		  	var wanted = ["bitcoin","ethereum","litecoin"];
-		  	//var result = response.data;
-		  	var result = response.data.filter(currency => wanted.includes(currency.id));
+		  	var result = response.data;
+		  	//var result = response.data.filter(currency => wanted.includes(currency.id));
 		  	this.setState({data: result});
 		  })
 		  .catch(err => console.log(err));
@@ -59,21 +59,20 @@ class Tickers extends React.Component{
 		return ('#'+(Math.random()*0xFFFFFF<<0).toString(16));
 		
 	}
-	//document.getElementById({currency.id}).style.background = random_color();
+	
 
 
 	componentDidMount(){
-		//const rColor = () =>('#'+(Math.random()*0xFFFFFF<<0).toString(16));
-		//console.log(rColor);
+		
 		this.fetchCryptoCurrencyData();
 		this.interval = setInterval(() => this.fetchCryptoCurrencyData(), 20 * 1000);
 	}
 
 	render(){
-		const rColor = '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-		console.log(rColor);
+		
+		
 		var tickers = this.state.data.map((currency) =>
-			<Cryptocurrency data={currency} key = {currency.id} color = {rColor} />
+			<Cryptocurrency data={currency} key = {currency.id}/>
 
 		);
 
