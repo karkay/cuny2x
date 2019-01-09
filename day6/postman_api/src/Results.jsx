@@ -4,43 +4,19 @@ class Results extends React.Component{
 	constructor(props){
 		super(props);
 		this.state = {
-			data: [
-			    "10002",
-			    "10005",
-			    "10006",
-			    "10007",
-			    "10008",
-			    "10009",
-			    "10010",
-			    "10012",
-			    "10013",
-			    "10014",
-			    "10016",
-			    "10017",
-			    "10018",
-			    "10019",
-			    "10020",
-			    "10021",
-			    "10022",
-			    "10023",
-			    "10024",
-			    "10025",
-			    "10026"
-			]
-			
-
-
+			data: []
 		}
 		//bind funcs here
 	}
 
 	render(){
-		var results = this.state.data.map((item) =>
-			<li className="item" key = "item">{item}
+		var results = this.props.data.map((item) =>
+			<li className="item" key = {item}>{item}
 			</li>
 
 
 		);
+		console.log(results);
 		//compare prev states using componentdidupdate
 		// if(results.length !== 0){	
 		// 	this.setState({
@@ -48,9 +24,10 @@ class Results extends React.Component{
 		// 	});
 		// }
 		console.log(results);
+		console.log(this.props.data);
 		return(
 			<div className = "results">
-				{data.length && results}
+				{this.props.hasResults && results ? results : "nothing there :("}
 
 
 			</div>

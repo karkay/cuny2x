@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Search from './Search';
+import ZipSearch from './ZipSearch';
 import './App.css';
 
 class App extends Component {
@@ -7,10 +8,16 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Zip Code Search</h2>
+          <h2>City Search</h2>
         </div>
         <Search/>
+        <div className="App-header">
+          <h2>Zip Code Search</h2>
+        </div>
+        <ZipSearch/>
+      
       </div>
+      
     );
   }
 }
