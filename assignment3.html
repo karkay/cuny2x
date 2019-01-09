@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kent's Assignment 3</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="stylesheet.css">
+
+	<script type="text/javascript">
+
+		function updateText(id){
+			// document.getElementById('results').innerHTML = "I'm right! " + value;
+			let results = document.getElementById('results').innerHTML;
+			if(results === "I'm right!"){
+				document.getElementById('results').innerHTML = "No, I'm right!";
+			}else{
+				document.getElementById('results').innerHTML = "I'm right!";
+			}
+
+		}
+
+		function barkAtUser(){
+			document.getElementById('hover_element').classList.toggle('text-danger');
+			alert("Hey, I told you not to hover over me!");
+		}
+
+
+	</script>
+	<script type="text/javascript" src="authCode.js"></script>
+</head>
+<body>
+	<div class="container-fluid" id="wrapper">
+		<div class="row">
+			<div class="col-xs-6">
+				<button type="button" class="btn btn-success" id ="button1" onclick="updateText(this.id);" value="btn1">One</button>
+				<button type="button" class="btn btn-danger" id = "button2" onclick="updateText(this.id);" value ="btn2">Two</button>
+			</div>
+		</div>
+		
+	</div>
+	<div class="container-fluid" id="wrapper">
+			
+				<p id="results">some text here</p>
+		</div>
+
+	<div class="container-fluid" id="wrapper">
+		<div class="row">
+			
+				<h1 class="text-primary" id ="hover_element" onmouseover="barkAtUser(); return false;"> Don't hover over me</h1>
+		
+		</div>
+		
+	</div>
+
+	<div class="container-fluid" id ="wrapper">
+		<h1 id="login-status">login</h1>
+	</div>
+
+	<div class="container-fluid" id="wrapper">
+		
+	
+		<form onsubmit="checkPass(); return false;">
+			<div class="form-group">
+			   
+			      <input type="text" class="form-control" id="email" placeholder="email">
+			</div>
+			<div class="form-group">
+			   
+			      <input type="text" class="form-control" id="usr" placeholder="username">
+			</div>
+			    <div class="form-group">
+			     
+			      <input type="password" class="form-control" id="pwd" placeholder="password">
+		    </div>
+		    <div class="form-group" id = "sub_button">
+		    	<input type="submit" class="btn btn-info" value="submit">
+
+		    </div>
+		</form>
+	
+	</div>
+	
+</body>
+
+</html>
